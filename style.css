@@ -1,0 +1,260 @@
+body{
+    background-color:     #d4e4ee;
+    margin:0;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+}
+#header{
+    flex-basis: 100%;
+    /* border-bottom: 0.5px solid #557990; */
+    padding:15px;
+    /* height:80px; */
+    display: flex;
+    flex-wrap: wrap;
+    margin:0;
+    justify-content: flex-end;
+}
+#header img{
+    height:50px;
+}
+.head-2{
+    flex-basis: 13%;
+    align-content: center;
+    color:#557990;
+}
+.head-3{
+    flex-basis: 13%;
+    align-content: center;
+    color:#557990;
+}
+.head-4{
+    /* flex-basis: 5%; */
+    align-content: center;
+    color:#557990;
+}
+.head-5{
+    flex-basis:59%;
+}
+#header a{
+    text-decoration: none;
+    color:#557990;
+}
+#mainbody{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    /* border-bottom: 1px solid black; */
+    height:613px;
+    background-color: #cadae4;
+}
+#left-part{
+    /* border: 1px solid black; */
+    flex-basis: 60%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-content: center;
+    text-align: center;
+
+}
+.left-part-top{
+    font-size: 50px;
+    color: #557990;
+    justify-content: center;
+    font-family: "Freehand", cursive;
+    font-weight: 400;
+    font-style: normal; 
+}
+.left-part-middle{
+    font-size: 140px;
+    color:#557990;
+    font-family: "Briem Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.left-part-middle img{
+    height:190px;
+}
+.left-part-bottom{
+    font-size: 45px;
+    color: #557990;
+    justify-content: center;
+    font-family: "Freehand", cursive;
+    font-weight: 400;
+    font-style: normal; 
+    margin:0 70px;
+}
+#right-part{
+    /* border: 1px solid black; */
+    flex-basis: 35%;
+    align-content: center;
+    text-align: center;
+}
+.right-part-bottom{
+    font-size: 30px;
+    color: #557990;
+    justify-content: center;
+    font-family: "Freehand", cursive;
+    font-weight: 400;
+    font-style: normal; 
+    margin:0 20px;
+}
+#The-Wish{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    height:800px;
+}
+
+
+.wish-left{
+    flex-basis: 40%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.wish-left img{
+    height:500px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    border-top-left-radius: 47% ;
+    border-top-right-radius: 47% ;
+}
+.wish-left-content{
+    text-align: center;
+    font-size: 43px;
+    color:#557990;
+    font-family: "Briem Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.wish-right{
+    flex-basis: 59%;
+    /* border: 1px solid black; */
+}
+.wish-right-content{
+    margin:100px;
+    font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+
+#Happy-Moments{
+    /* display: flex;
+    flex-wrap: wrap; */
+    flex-basis: 100%;
+    height:95vh;
+    background-color: #cadae4;
+    flex-direction: column;
+}
+.Happy-Moments-heading{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10vh;
+    color:#557990;
+    font-family: "Briem Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+#HM-middle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    /* align-items: flex-start;  */
+    /* Align items to the start of the flex container */
+  }
+
+.card {
+    flex-basis: 20%; /* Set flex basis to 45% for two cards per row */
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    /* Adjust margin for spacing between cards */
+    border-radius: 10vh; /* Increase border radius for rounded corners */
+    height: 45vh; /* Set a fixed height for the cards */
+    background-size: cover;
+}
+  
+  @media (max-width: 768px) {
+    .card {
+      flex-basis: 45%;
+      height:55vh; /* Change flex basis to 100% for one card per row on smaller */
+    }
+  }
+  @media (max-width: 520px) {
+    .card {
+      flex-basis: 100%; 
+      height:80vh;
+    }
+    #HM-middle {
+        justify-content: center;
+      }
+  }
+  
+#card-1{
+    background-image: url("6.JPG");
+    background-size: cover;
+}
+#card-2{
+    background-image: url("7.jpeg");
+    background-size: cover;
+}
+#card-3{
+    background-image: url("8.jpeg");
+    background-size: cover;
+}
+#card-4{
+    background-image: url("9.jpeg");
+    background-size: cover;
+}
+#HM-bottom{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+#Footer{
+    height:25vh;
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    color: #557990;
+    /* align-content: center; */
+}
+
+#footer-top img{
+    height:40px;
+    margin:auto;
+    display: block;
+}
+#footer-middle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+}
+.words{
+    margin-left: 1vh;
+}
+#footer-bottom{
+    text-align: center;
+}
+
+
+
